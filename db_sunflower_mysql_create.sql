@@ -1,14 +1,3 @@
-CREATE TABLE `tb_produto` (
-	`id` bigint NOT NULL AUTO_INCREMENT,
-	`nome` varchar(255) NOT NULL,
-	`preco` DECIMAL(255) NOT NULL,
-	`descricao` varchar(1000) NOT NULL,
-	`quantidade` int(255) NOT NULL,
-	`fk_categoria` bigint(255) NOT NULL,
-	`fk_usuario` bigint(255) NOT NULL,
-	PRIMARY KEY (`id`)
-);
-
 CREATE TABLE `tb_usuario` (
 	`id` bigint NOT NULL AUTO_INCREMENT,
 	`nome_completo` varchar(255) NOT NULL,
@@ -17,11 +6,23 @@ CREATE TABLE `tb_usuario` (
 	PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `tb_produto` (
+	`id` bigint NOT NULL AUTO_INCREMENT,
+	`nome` varchar(50) NOT NULL,
+	`preco` DECIMAL NOT NULL,
+	`descricao` TIMESTAMP NOT NULL,
+	`quantidade` int NOT NULL,
+	`imagem` varchar(255) NOT NULL,
+	`fk_categoria` bigint NOT NULL,
+	`fk_usuario` bigint NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
 CREATE TABLE `tb_categoria` (
 	`id` bigint NOT NULL AUTO_INCREMENT,
 	`nome_categoria` varchar(255) NOT NULL,
-	`status` BOOLEAN(255) NOT NULL AUTO_INCREMENT,
-	`ebook_cat` varchar(255) NOT NULL,
+	`descricao_categoria` varchar(255) NOT NULL,
+	`setor` enum NOT NULL DEFAULT '"Residencial" "Industrial"',
 	PRIMARY KEY (`id`)
 );
 
