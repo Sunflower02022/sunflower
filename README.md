@@ -1,28 +1,30 @@
 
-# Projeto Integrador - Grupo 1 - ODS 7: Energia Limpa e Acessivel
+<h1> 🌻 Projeto Integrador Generation Brasil - Sunflower 🌻</h1>
 
-## O Problema Social
+Objetivo de Desenvolvimento Sustentável 7 - Energia Limpa e Acessível
 
-###### Aumento na demanda de energia eletrica e seu impacto ambiental.
+<h2>O Problema Social</h2>
 
-## Qual é o impacto e as consequências na sociedade?
+Aumento na demanda de energia eletrica e seu impacto ambiental.
 
-###### Uma má utilização dos recursos naturais disponiveis, além da destruição do meio ambiente torna a energia mais cara e menos acessivel a população.
+<h2>Qual é o impacto e as consequências na sociedade?</h2>
 
-## Qual foi a solução escolhida?
+Uma má utilização dos recursos naturais disponiveis, além da destruição do meio ambiente torna a energia mais cara e menos acessivel a população.
 
-###### E-Commerce 
+<h2>Qual foi a solução escolhida?</h2>
 
-## Qual o motivo da escolha do modelo de app?
+E-Commerce 
 
-###### Através da disseminação de informações e da venda de equipamentos que possibilitam a utilização dos recursos naturais disponiveis em um preço acessivel, temos uma solução energetica para o aumento na demanda de energia eletrica.
+<h2>Qual o motivo da escolha do modelo de app?</h2>
 
-## Integrantes do Grupo: 
+Através da disseminação de informações e da venda de equipamentos que possibilitam a utilização dos recursos naturais disponiveis em um preço acessivel, temos uma solução energetica para o aumento na demanda de energia eletrica.
 
-["Deyky Pinheiro"](https://github.com/DeykyPinheiro)
-["Giovanna Alonso Guarezi"](https://github.com/giovannaalonso)
-["Rennan Mendes"](https://github.com/RennanMendes)
-["Tatyana Okimura"](https://github.com/TatyanaMie)
-["Nycolas Mendes"](https://github.com/Nyckk1)
-["Gabriel Varandas"](https://github.com/Gabsdevfull)
-["Leonardo Maiorano"](https://github.com/leonardomaiorano)
+<h2>Integrantes do Grupo:</h2>
+
+- <a href="https://github.com/DeykyPinheiro">Deyky Pinheiro</a>
+- <a href="https://github.com/Gabsdevfull">Gabriel Varandas</a>
+- <a href="https://github.com/giovannaalonso">Giovanna Alonso Guarezi</a>
+- <a href="https://github.com/leonardomaiorano">Leonardo Maiorano</a>
+- <a href="https://github.com/Nyckk1">Nycolas Mendes</a>
+- <a href="https://github.com/RennanMendes">Rennan Mendes</a>
+- <a href="https://github.com/TatyanaMie">Tatyana Okimura</a>
