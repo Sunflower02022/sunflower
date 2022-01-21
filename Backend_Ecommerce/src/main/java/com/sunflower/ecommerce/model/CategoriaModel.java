@@ -1,6 +1,7 @@
 package com.sunflower.ecommerce.model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,6 +13,7 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name = "tb_categoria")
 public class CategoriaModel {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -25,9 +27,9 @@ public class CategoriaModel {
 	private String descricao_categoria;
 	
 	@NotBlank(message = "O atributo setor não pode ser vazio")
-	@Enumerated
+	@Enumerated(value = EnumType.STRING)
 	private Setor setor;
-
+	
 	public long getId() {
 		return id;
 	}
