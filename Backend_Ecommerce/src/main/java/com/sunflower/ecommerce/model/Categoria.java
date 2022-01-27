@@ -13,23 +13,31 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name = "tb_categoria")
 public class Categoria {
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 1bb3ef7dca99e8b801a7dd938c379c37cefa3343
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@NotBlank(message = "O atributo nome não pode ser vazio")
 	@Size(min = 5, max = 100, message = "O atributo nome deve conter no min 5 e no max 100 caracteres")
-	private String nome_categoria;
-	
+	private String nomeCategoria;
+
 	@NotBlank(message = "O atributo descricao não pode ser vazio")
 	@Size(min = 5, max = 100, message = "O atributo descricao deve conter no min 5 e no max 100 caracteres")
 	private String descricaoCategoria;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 1bb3ef7dca99e8b801a7dd938c379c37cefa3343
 	@NotBlank(message = "O atributo setor não pode ser vazio")
 	@Enumerated(value = EnumType.STRING)
 	private Setor setor;
-	
+
 	public long getId() {
 		return id;
 	}
@@ -38,15 +46,18 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getNome_categoria() {
-		return nome_categoria;
+	public String getNomeCategoria() {
+		return nomeCategoria;
 	}
 
-	public void setNome_categoria(String nome_categoria) {
-		this.nome_categoria = nome_categoria;
+	public void setNomeCategoria(String nomeCategoria) {
+		this.nomeCategoria = nomeCategoria;
 	}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1bb3ef7dca99e8b801a7dd938c379c37cefa3343
 	public String getDescricaoCategoria() {
 		return descricaoCategoria;
 	}
@@ -65,5 +76,4 @@ public class Categoria {
 
 	
 	
-
 }
