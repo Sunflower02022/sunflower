@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_categoria")
-public class CategoriaModel {
+public class Categoria {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,7 @@ public class CategoriaModel {
 	
 	@NotBlank(message = "O atributo descricao não pode ser vazio")
 	@Size(min = 5, max = 100, message = "O atributo descricao deve conter no min 5 e no max 100 caracteres")
-	private String descricao_categoria;
+	private String descricaoCategoria;
 	
 	@NotBlank(message = "O atributo setor não pode ser vazio")
 	@Enumerated(value = EnumType.STRING)
@@ -46,12 +46,13 @@ public class CategoriaModel {
 		this.nome_categoria = nome_categoria;
 	}
 
-	public String getDescricao_categoria() {
-		return descricao_categoria;
+
+	public String getDescricaoCategoria() {
+		return descricaoCategoria;
 	}
 
-	public void setDescricao_categoria(String descricao_categoria) {
-		this.descricao_categoria = descricao_categoria;
+	public void setDescricaoCategoria(String descricaoCategoria) {
+		this.descricaoCategoria = descricaoCategoria;
 	}
 
 	public Setor getSetor() {
