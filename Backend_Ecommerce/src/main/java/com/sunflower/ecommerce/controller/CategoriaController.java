@@ -20,32 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sunflower.ecommerce.model.Categoria;
 import com.sunflower.ecommerce.repository.CategoriaRepository;
 
-<<<<<<< HEAD
-@RestController
-@RequestMapping("/categoria")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
-public class CategoriaController {
-	@Autowired
-	private CategoriaRepository categoriaRepository;
-
-	@GetMapping
-	 public ResponseEntity<List<Categoria>> getAll() {
-        return ResponseEntity.ok(categoriaRepository.findAll());
-    }
-}
-=======
-
-
 @RestController
 @RequestMapping("/categorias")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
-	
+
 	@Autowired // Injeção de dependência
 	private CategoriaRepository categoriaRepository;
 
-	
-	//Busca todas as requisições ao /categoria
+	// Busca todas as requisições ao /categoria
 	@GetMapping
 	public ResponseEntity<List<Categoria>> getAll() {
 		return ResponseEntity.ok(categoriaRepository.findAll());
@@ -60,8 +43,10 @@ public class CategoriaController {
 
 	// Busca por Descrição
 	@GetMapping("descricao/{descricao}")
-	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao_categoria) { // Lista de Descrições
-		return ResponseEntity.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricao_categoria));
+	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao_categoria) { // Lista de
+																										// Descrições
+		return ResponseEntity
+				.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricao_categoria));
 	}
 
 	// Cria uma nova postagem
@@ -88,4 +73,3 @@ public class CategoriaController {
 		}).orElse(ResponseEntity.notFound().build());
 	}
 }
->>>>>>> 1bb3ef7dca99e8b801a7dd938c379c37cefa3343
