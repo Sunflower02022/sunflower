@@ -21,18 +21,18 @@ public class SwaggerConfig {
 		return new OpenAPI ()
 				.info(new Info()
 	                    .title("Projeto Sunflower")
-	                    .description("Projeto Sunflower - Generation Brasil")
+	                    .description("<br>Deyky " + "Gabriel </br>" + "<br>Giovanna " + "Leonardo </br>" + "</br>Nycolas " + "Rennan " + "Tatyana</br>")
 	                    .version("v0.0.1")
 	                .license(new License()
-	                    .name("generation.org.br")
-	                    .url("http://springdoc.org/%22"))
+	                    .name("Generation Brasil")
+	                    .url("generation.org.br"))
 	                .contact(new Contact()
-	                    .name("Deyky, Gabriel, Giovanna, Leonardo, Nycolas,  Rennan, Tatyana")
+	                    .name("Projeto Sunflower")
 	                    .url("https://github.com/Sunflower02022")
 	                    .email("sunflowergeneration01@gmail.com")))
 	                .externalDocs(new ExternalDocumentation()
 	                    .description("Github")
-	                    .url("https://github.com/Sunflower02022/sunflower.git"));
+	                    .url("https://github.com/Sunflower02022/sunflower"));
 	    }
 
 	    @Bean
