@@ -24,15 +24,14 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@NotBlank(message = "O atributo nome não pode ser vazio")
+	@NotBlank(message = "O atributo nomeCategoria é obrigatório")
 	@Size(min = 5, max = 100, message = "O atributo nome deve conter no min 5 e no max 100 caracteres")
 	private String nomeCategoria;
 
-	@NotBlank(message = "O atributo descricao não pode ser vazio")
+	@NotBlank(message = "O atributo descricaoCategoria é obrigatório")
 	@Size(min = 5, max = 100, message = "O atributo descricao deve conter no min 5 e no max 100 caracteres")
 	private String descricaoCategoria;
 
-	@NotBlank(message = "O atributo setor não pode ser vazio")
 	@Enumerated(value = EnumType.STRING)
 	private Setor setor;
 	

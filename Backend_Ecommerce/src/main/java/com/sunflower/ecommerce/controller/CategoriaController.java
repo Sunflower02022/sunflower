@@ -21,7 +21,7 @@ import com.sunflower.ecommerce.model.Categoria;
 import com.sunflower.ecommerce.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping("/categorias")
+@RequestMapping("/categoria")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 
