@@ -31,6 +31,8 @@ public class Produto {
 	@Size (min=5, message = "O atributo descricao deve conter no min 5 caracteres.")
 	private String descricao;
 	
+	private String foto;
+	
 	@ManyToOne
 	@JsonIgnoreProperties ("produto")
 	private Categoria categoria;
@@ -85,6 +87,14 @@ public class Produto {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
-	}	
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
 
 }
