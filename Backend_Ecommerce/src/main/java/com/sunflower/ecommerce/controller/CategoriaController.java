@@ -42,11 +42,11 @@ public class CategoriaController {
 	}
 
 	// Busca por Descrição
-	@GetMapping("descricao/{descricao}")
-	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao_categoria) { // Lista de
+	@GetMapping("/descricao/{descricao}")
+	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao) { // Lista de
 																										// Descrições
 		return ResponseEntity
-				.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricao_categoria));
+				.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricao));
 	}
 
 	// Cria uma nova postagem

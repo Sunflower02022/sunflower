@@ -40,6 +40,10 @@ public class Produto {
 	@ManyToOne
 	@JsonIgnoreProperties ("produto")
 	private Usuario usuario;
+	
+	@ManyToOne
+	@JsonIgnoreProperties ("produto")
+	private Carrinho carrinho;
 
 	public long getId() {
 		return id;
@@ -95,6 +99,14 @@ public class Produto {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
+	}
+
+	public Carrinho getCarrinho() {
+		return carrinho;
+	}
+
+	public void setCarrinho(Carrinho carrinho) {
+		this.carrinho = carrinho;
 	}
 
 }
