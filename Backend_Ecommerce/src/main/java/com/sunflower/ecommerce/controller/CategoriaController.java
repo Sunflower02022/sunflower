@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sunflower.ecommerce.model.Categoria;
+import com.sunflower.ecommerce.model.Setor;
 import com.sunflower.ecommerce.repository.CategoriaRepository;
 
 @RestController
@@ -42,11 +43,18 @@ public class CategoriaController {
 	}
 
 	// Busca por Descrição
-	@GetMapping("descricao/{descricao}")
+	@GetMapping("/descricao/{descricao}")
 	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao_categoria) { // Lista de
 																										// Descrições
 		return ResponseEntity
 				.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricao_categoria));
+	}
+	
+	@GetMapping("/setor/{setor}")
+	public ResponseEntity<List<Categoria>> getBySetor(@PathVariable Setor setor) { // Lista de
+																										// Descrições
+		return ResponseEntity
+				.ok(categoriaRepository.findAllBySetor(setor));
 	}
 
 	// Cria uma nova postagem
