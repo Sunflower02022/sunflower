@@ -4,7 +4,9 @@ O Back-End foi construído com as tecnologias:
 
 - Java;
 - Spring Framework;
-- MySQL.
+- H2;
+- MySQL;
+- PostgreSQL.
 
 ## Como rodar o Back-End
 
